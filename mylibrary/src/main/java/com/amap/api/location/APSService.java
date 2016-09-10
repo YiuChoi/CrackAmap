@@ -22,15 +22,15 @@ public class APSService
             String str2 = paramIntent.getStringExtra("packageName");
             String str3 = paramIntent.getStringExtra("sha1AndPackage");
             String str4 = paramIntent.getStringExtra("as");
-            Log.i("修改前数据","apiKey:"+str1 + "\npackageName:" + str2 + "\nsha1AndPackage:" + str3 + "\nas:" + str4);
-            paramIntent.putExtra("apiKey","93076c13932aba6eeaee2a02656f14d7");
-            paramIntent.putExtra("packageName","com.example.example");
-            paramIntent.putExtra("sha1AndPackage","FA:AA:F5:02:B2:17:AC:D3:DA:46:38:ED:FF:E3:0C:A3:E4:67:0A:50:com.example.example");
+            Log.i("修改前数据", "apiKey:" + str1 + "\npackageName:" + str2 + "\nsha1AndPackage:" + str3 + "\nas:" + str4);
+            paramIntent.putExtra("apiKey", "93036c13932aba6eeaee2a02656f14d7");
+            paramIntent.putExtra("packageName", "com.lge.clock");
+            paramIntent.putExtra("sha1AndPackage", "FA:AB:F5:02:B2:17:AC:D3:DA:46:38:ED:FF:E3:0C:A3:E4:67:0A:50:com.lge.clock");
             str1 = paramIntent.getStringExtra("apiKey");
             str2 = paramIntent.getStringExtra("packageName");
             str3 = paramIntent.getStringExtra("sha1AndPackage");
             str4 = paramIntent.getStringExtra("as");
-            Log.i("修改后数据","apiKey:"+str1 + "\npackageName:" + str2 + "\nsha1AndPackage:" + str3 + "\nas:" + str4);
+            Log.i("修改后数据", "apiKey:" + str1 + "\npackageName:" + str2 + "\nsha1AndPackage:" + str3 + "\nas:" + str4);
             return this.a.onBind(paramIntent);
         } catch (Throwable localThrowable) {
             c.a(localThrowable, "APSService", "onBind");
